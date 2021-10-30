@@ -20,7 +20,7 @@
 // function fruitProcessor(apples, oranges) {
 //   //   console.log(apples, oranges);
 //   const juice = `juice with ${apples} apples and ${oranges} oranges`;
-//   return juice;
+//   console.log( juice;
 // }
 // const appleJuice = fruitProcessor(5, 0);
 // console.log(appleJuice);
@@ -30,7 +30,7 @@
 
 //function declaration
 // function calcAge1(birthyear) {
-//   return 2037 - birthyear;
+//   console.log( 2037 - birthyear;
 // }
 
 // const age1 = calcAge1(1997);
@@ -39,7 +39,7 @@
 // // function expression
 
 // const calcAge2 = function (birthyear) {
-//   return 2037 - birthyear;
+//   console.log( 2037 - birthyear;
 // };
 // const age2 = calcAge2(1997);
 // console.log(age2);
@@ -52,14 +52,14 @@
 // const yearsUntilRetirement = (birthyear, firstname) => {
 //   const age = 2021 - birthyear;
 //   const retirement = 65 - age;
-//   return `${firstname} retires in ${retirement} years`;
+//   console.log( `${firstname} retires in ${retirement} years`;
 // };
 
 // console.log(yearsUntilRetirement(1997, "Abu"));
 // console.log(yearsUntilRetirement(2018, "Bright"));
 
 // function cutFruitPieces(fruit) {
-//   return fruit * 4;
+//   console.log( fruit * 4;
 // }
 
 // function fruitProcessor(apples, oranges) {
@@ -68,7 +68,7 @@
 
 //   //   console.log(apples, oranges);
 //   const juice = `juice with ${applePieces} pieces of apple and ${orangesPieces} pieces of orange`;
-//   return juice;
+//   console.log( juice;
 // }
 // // const appleJuice = fruitProcessor(5, 0);
 // // console.log(appleJuice);
@@ -76,11 +76,52 @@
 // // const orangeJuice = fruitProcessor(2, 4);
 // console.log(fruitProcessor(2, 3));
 
-const yearsUntilRetirement = function (birthyear, firstname) {
-  const age = 2021 - birthyear;
-  const retirement = 65 - age;
-  return `${firstname} retires in ${retirement} years`;
-};
+// const calcAge = function (birthyear) {
+//   console.log( 2037 - birthyear;
+// };
 
-console.log(yearsUntilRetirement(1997, "Abu"));
-console.log(yearsUntilRetirement(2018, "Bright"));
+// const yearsUntilRetirement = function (birthyear, firstname) {
+//   const age = calcAge(birthyear);
+//   const retirement = 65 - age;
+
+//   if (retirement > 0) {
+//     console.log(`${firstname} retires in ${retirement} years`);
+//     console.log( retirement;
+//   } else {
+//     console.log(`${firstname}, has already retired`);
+//     console.log( -1;
+//   }
+
+//   //console.log( `${firstname} retires in ${retirement} years`;
+// };
+
+// // console.log(yearsUntilRetirement(1997, "Abu"));
+// // console.log(yearsUntilRetirement(2018, "Bright"));
+
+// console.log(yearsUntilRetirement(1997, "Abu"));
+// console.log(yearsUntilRetirement(1970, "Bright"));
+
+// const avgDolphins= function (44 + 23 + 71) / 3;
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+
+let avgDolphins = calcAverage(44, 23, 71);
+let avgKoalas = calcAverage(65, 54, 49);
+console.log(avgDolphins);
+console.log(avgKoalas);
+
+const checkWinner = function (avgDolphins, avgKoalas) {
+  if (avgDolphins >= 2 * avgKoalas) {
+    console.log(`Dolphins wins 🏆 ${avgDolphins}, vs ${avgKoalas}`);
+  } else if (avgKoalas >= 2 * avgDolphins) {
+    console.log(`Koalas wins 🏆 ${avgKoalas}, vs ${avgDolphins}`);
+  } else {
+    console.log("No one wins the 🏆 ");
+  }
+};
+checkWinner(avgDolphins, avgKoalas);
+checkWinner(576, 111);
+
+avgDolphins = calcAverage(85, 54, 41);
+avgKoalas = calcAverage(23, 34, 27);
+
+checkWinner(avgDolphins, avgKoalas);
